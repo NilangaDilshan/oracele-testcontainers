@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-boot-testing
+  jpa:
+    hibernate:
+      ddl-auto: update # Hibernate DDL auto-generation strategy (update, create, create-drop, none)
+      dialect: org.hibernate.dialect.Oracle12cDialect
+    show-sql: true # Show SQL statements in the console
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: testuser
+    password: testpass
+    driver-class-name: oracle.jdbc.OracleDriver
